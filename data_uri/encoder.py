@@ -14,4 +14,4 @@ def EncodeBase64(buffer, force_mimetype='', charset=''):
 
     header_parts.append('base64')
 
-    return ';'.join(header_parts) + ',' + base64.urlsafe_b64encode(buffer)
+    return ';'.join(header_parts) + ',' + base64.b64encode(buffer)
