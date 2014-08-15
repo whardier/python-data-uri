@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 import argparse
 
 import data_uri.encoder
@@ -21,7 +23,7 @@ def run():
 
     args = parser.parse_args()
 
-    print data_uri.encoder.EncodeBase64(open(args.file).read())
+    print(data_uri.encoder.EncodeBase64(open(args.file).read()))
 
 if __name__ == "__main__":
     run()
